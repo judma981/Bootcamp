@@ -36,6 +36,7 @@ body{
   .flex-box{
     background-color: brown;
     border: 5px solid black;
+    padding: 20;
     box-shadow:black 5px 5px 8px ;
     font-size: 5rem;
     text-shadow: 5px 5px 8px black;
