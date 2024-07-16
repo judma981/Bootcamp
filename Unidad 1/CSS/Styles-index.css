@@ -7,3 +7,14 @@
  h1{
     color: rgb(218, 13, 13);
  }
+ p{
+    text-align: justify;
+ }
+
+ .Header{
+    margin: 5%;
+    padding: 0px;
+    display: flex; 
+    justify-content: center; 
+    color: cyan;
+ }
