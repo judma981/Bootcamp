@@ -1,7 +1,6 @@
 *{
     padding: 5px;      
-    margin: 2px; 
-    background-color: bisque;
+    background-color: whitesmoke;
  }
 
  h1{
@@ -11,10 +10,45 @@
     text-align: justify;
  }
 
- .Header{
-    margin: 5%;
-    padding: 0px;
-    display: flex; 
-    justify-content: center; 
-    color: cyan;
+ .Header{    
+   background-color:red;
+   color: black; /* Text color for contrast */
+   position: fixed; /* Make the header stay at the top */
+   height: 80px;
+   padding: 10px 20px;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 100; /* Ensure the header is on top of other elements */
+   display: flex;
+   justify-content: space-between; /* Align navigation and logos */
+   align-items: center; 
  }
+ .Header nav{
+     text-align: right;
+ }
+ .Header a{
+   display: inline-block;
+   padding: 10px 25px;
+   text-decoration: none;
+   color:black !important;
+   font-weight: bold;
+}
+img {
+   display: block; 
+   margin: 0 auto;
+   width: 300px; 
+ }
+ .hightligth{
+   padding: auto;
+   margin-top: 25px;
+   text-align: center;
+   
+ }
+ h2{
+   padding: auto;
+   margin-top: 25px;
+   text-align: center;
+   font-size: 50px;
+ }
+ 
