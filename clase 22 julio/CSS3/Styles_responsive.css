@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+.header{
+    border: 2px solid red;
+    padding: 15px;
+    background-color: purple;
+}
+.header h1{
+    text-align: center;
+    color: white;
+}
+.menu{
+    width: 30%;
+    float: left;
+    padding: 10px;
+    
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: aquamarine;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+}
+.main{
+    width: 70%;
+    float: left;
+    padding: 15px;
+       
+}
+html{
+    font-family: 'Lucida Sans', sans-serif;
+}
