@@ -1,27 +1,19 @@
-*{
+html{
     box-sizing: border-box;
-    background-color: whitesmoke;
- }
-
- h1{
-    color: rgb(218, 13, 13);
- }
- p{
-    text-align: justify;
- }
-
+    background-color: whitesmoke; 
+    
+ } 
+ 
  .Header{    
-   background-color:red;
-   color: black; /* Text color for contrast */
-   position: fixed; /* Make the header stay at the top */
-   height: 80px;
+   background-color:rgb(252, 42, 42);
+   color: black;
+   position: fixed; 
+   height: 40px;
    padding: 10px ;
    top: 0;
    left: 0;
    width: 100%;
-   z-index: 100; /* Ensure the header is on top of other elements */
-   display: flex;
-   justify-content: space-between; /* Align navigation and logos */
+   display: flex;   
    align-items: center; 
  }
  .Header nav{
@@ -34,9 +26,16 @@
    color:black !important;
    font-weight: bold;
 }
+p{
+    text-align: justify;
+    background: -webkit-linear-gradient(#f70000, #000000);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
 img {
    display: block; 
    margin: 0 auto;
+   padding-top: 50px;
    width: 300px; 
  }
  .hightligth{
@@ -52,8 +51,8 @@ img {
   width: 40%;
   margin-right: 2%; 
   margin-bottom: 2%;
+  }
   
- }
  h2{
    padding: auto;
    margin-top: 25px;
