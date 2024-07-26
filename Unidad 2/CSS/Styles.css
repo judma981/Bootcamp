@@ -1,8 +1,12 @@
 *{  
-    font-size: 2rem;
-    font-family:'Times New Roman', Times, serif ;
+    box-sizing: border-box;
     margin: 15px;
     padding: auto;
+  }
+  html{
+    font-size:62.5;
+    font-family:'Times New Roman', Times, serif ;
+    
   }
 
  .header{
@@ -30,15 +34,22 @@ body{
 }
 
 .flex-container{
-    /*background-color: rgba(240, 255, 255, 0.842);*/
-    background:linear-gradient(90deg, rgb(39, 38, 65) 0%, rgb(31, 31, 158) 35%, rgba(0,212,255,1) 100%);
-    color: white;
+    background-color: rgba(240, 255, 255, 0.842);   
     border: 2px solid black;    
     display: flex;
     flex-direction: row;
     
 }
-.gradient{
+  @media (max-width: 600px){
+
+    .flex-container{
+       
+      flex-direction: column;     
+      
+  }
+
+  }
+  .gradient{
     background: -webkit-linear-gradient(#ff2525, #333);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -53,11 +64,11 @@ body{
   .flex-box{
     background-color: brown;
     border: 5px solid black;
-    padding: 20;
     box-shadow:black 5px 5px 8px ;
     font-size: 5rem;
     text-align: center;
-    width: 150px;
+    width: 100px;
+    min-width: 150px;
     background: -webkit-linear-gradient(#f50b0b, #333);
     background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -5,7 +5,7 @@ html{
  } 
  
  .Header{    
-   background-color:rgb(252, 42, 42);
+   background-color:rgb(252, 42, 42) !important;
    color: black;
    position: fixed; 
    height: 40px;
@@ -13,7 +13,8 @@ html{
    top: 0;
    left: 0;
    width: 100%;
-   display: flex;   
+   display: flexbox;   
+   flex-direction: row;
    align-items: center; 
  }
  .Header nav{
@@ -26,6 +27,15 @@ html{
    color:black !important;
    font-weight: bold;
 }
+@media (max-width: 300px){
+
+  .Header{
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
 p{
     text-align: justify;
     background: -webkit-linear-gradient(#f70000, #000000);
