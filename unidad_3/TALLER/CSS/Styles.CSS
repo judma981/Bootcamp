@@ -1,0 +1,110 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover{
+    background-color: #555;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+section{
+    padding: 20px;
+}
+
+h2{
+    margin-top: 0;
+    color: rgb(148, 79, 79);
+}
+
+ol{
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+a{
+    color: #007bff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+a:hover{
+    text-decoration: underline;
+}   
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-md-6{
+    width: 48%;
+}
+
+.col-md-4{
+    width: 30%;
+}
+
+.col-md-2{
+    width: 14%;
+}
+
+.card{
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.card-header{
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-body{
+    padding: 10px;
+}
