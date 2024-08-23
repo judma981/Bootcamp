@@ -27,10 +27,14 @@
   console.log("El area es :" + Area +"El perimetro es " + perímetro);*/
   
  // 4.
-    
+ document.getElementById("boton").addEventListener("click", function() {
     let Numero = 502;
     if (Numero % 2 ===0){
         console.log("par")
     }else{
         console.log("impar")
     }
+    alert("Code started!");
+    console.log("This is a message from the JavaScript code.");
+});
+    
