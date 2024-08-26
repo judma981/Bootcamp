@@ -43,4 +43,26 @@
 
 
 
-    
+    //4. 
+const express = require('express');
+const app = express();
+const port = 4000;
+
+app.get('/numeros/:numero', (req, res) => {
+  const numeroLimite = parseInt(req.params.numero);
+
+  if (isNaN(numeroLimite)) {
+    return res.status(400).send('El parámetro "numero" debe ser un número válido.');
+  }
+
+  const numeros = [];
+  for (let i = 1; i <= numeroLimite; i++) {
+    numeros.push(i);
+  }
+
+  res.json(numeros);
+});
+
+app.listen(port, () => {
+  console.log(`Servidor escuchando en el puerto ${port}`);
+});
