@@ -46,7 +46,7 @@ section{
 
 h2{
     margin-top: 0;
-    color: rgb(148, 79, 79);
+    color: rgb(255, 0, 0);
 }
 
 ol{
@@ -68,30 +68,34 @@ a{
     background: rgba(255, 165, 62, 0.774);
     padding: auto;
     margin: auto;
+    border: 2px solid black;
 }
 
 .container{
-    width: 210px;
-    height: 50px; 
+    width: auto;
+    height: 100px; 
     background-color : rgba(201, 164, 109, 0.836);
     border: #000000;    
-    border-radius: 10px;
+    border-radius: 5px;
     border-color: #000000;
     border-style: solid;
     background-origin: padding-box;
     margin: 10px;
     padding: 10px;
 }
+.container li{
+    margin: 10px;
+}
 #Intermedio{
     background: rgb(30, 233, 189);
     padding: auto;
     margin: auto;
-    
+    border:2px dashed black ;    
 }
 
 .containerint{
-    width: 210px;    
-    height: 50px;
+    width: auto;    
+    height: 100px;
     background-color: cadetblue;
     border: #000000;   
     border-radius: 10px;
@@ -101,15 +105,19 @@ a{
     margin: 10px;
     padding: 10px;
 }
+.containerint li{
+    margin: 10px;
+}
 #Avanzado{
     background: rgb(104, 6, 233);
     padding: auto;
     margin: auto;
+    border: 2px double re ;
 }
 
 .containeradv{
-    width: 210px;
-    height: 50px;
+    width: auto;
+    height: 100px;
     background-color: rgba(18, 148, 223, 0.801);
     border: #000000;
     border-radius: 10px;
@@ -119,6 +127,10 @@ a{
     margin: 10px;
     padding: 10px;
 }
+.containeradv li{
+    margin: 10px;
+}
+
 
 
 button{
@@ -130,7 +142,7 @@ button{
     border: currentColor;
     cursor: pointer; 
     border: 1px solid black;
-    box-shadow:rgb(156, 154, 154) 2px 2px 3.5px ;
+    box-shadow:rgb(51, 46, 46) 5px 3px 8px ;
     
 }
 button :hover{
