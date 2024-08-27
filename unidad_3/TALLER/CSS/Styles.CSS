@@ -65,64 +65,80 @@ a{
     border-radius: 5px;
 }
 #Basico {
-    background: rgba(230, 155, 70, 0.5);
-    padding: 30px;
-    margin: 10px;
+    background: rgba(255, 165, 62, 0.774);
+    padding: auto;
+    margin: auto;
 }
-
-a:hover{
-    text-decoration: underline;
-}   
 
 .container{
-    width: 300px;
-    height: 150px; 
+    width: 210px;
+    height: 50px; 
     background-color : rgba(201, 164, 109, 0.836);
+    border: #000000;    
+    border-radius: 10px;
+    border-color: #000000;
+    border-style: solid;
+    background-origin: padding-box;
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
 }
+#Intermedio{
+    background: rgb(30, 233, 189);
+    padding: auto;
+    margin: auto;
+    
+}
+
+.containerint{
+    width: 210px;    
+    height: 50px;
+    background-color: cadetblue;
+    border: #000000;   
+    border-radius: 10px;
+    border-color: #000000;
+    border-style: solid;
+    background-origin: padding-box; 
+    margin: 10px;
+    padding: 10px;
+}
+#Avanzado{
+    background: rgb(104, 6, 233);
+    padding: auto;
+    margin: auto;
+}
+
+.containeradv{
+    width: 210px;
+    height: 50px;
+    background-color: rgba(18, 148, 223, 0.801);
+    border: #000000;
+    border-radius: 10px;
+    border-color: #000000;
+    border-style: solid;
+    background-origin: padding-box;    
+    margin: 10px;
+    padding: 10px;
+}
+
+
 button{
     width: 90px;
     height: auto;
     padding: 10px;
     color: white;
     background-color: #000000;
-    border: none;
-    cursor: pointer;
+    border: currentColor;
+    cursor: pointer; 
+    border: 1px solid black;
+    box-shadow:rgb(156, 154, 154) 2px 2px 3.5px ;
+    
+}
+button :hover{
+    background-color: aqua;
 }
 
 .row{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.col-md-6{
-    width: 48%;
-}
-
-.col-md-4{
-    width: 30%;
-}
-
-.col-md-2{
-    width: 14%;
-}
-
-.card{
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-.card-header{
-    background-color: #f8f9fa;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    border-radius: 5px 5px 0 0;
-}
-
-.card-body{
-    padding: 10px;
 }
