@@ -14,6 +14,7 @@
 
 
 //3.
+/*
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -27,6 +28,66 @@ app.get('/saludo/:nombre/:edad', (req, res) => {
   }
 
   res.send(`Hola ${nombre}, tienes ${edad} años!`);
+});
+
+app.listen(port, () => {
+  console.log(`Servidor escuchando en el puerto ${port}`);
+});
+*/
+//6.
+/*
+const express = require('express');
+const app = express();
+const port = 3000; 
+
+
+app.get('/', (req, res) => {
+  res.send('Hola, prueba de servidor!');
+});
+
+// Start the server and listen on the specified port
+app.listen(port, () => {
+  console.log(`Server is listening at http://localhost:${port}`);
+});*/
+/*
+//7.
+const express = require('express');
+const app = express();
+const port = 4000;
+
+// Ruta dinámica con parámetro de identificación
+app.get('/usuario/:id', (req, res) => {
+  const userId = req.params.id;
+  res.send(`Mostrando información del usuario con ID: ${userId}`);
+});
+
+app.listen(port, () => {
+  console.log(`Servidor escuchando en el puerto ${port}`);
+});
+*/
+
+//8.
+ const express = require('express');
+const app = express();
+const port = 3000;
+
+// Middleware para registrar información de la solicitud
+const loggerMiddleware = (req, res, next) => {
+  const fechaHora = new Date().toLocaleString();
+  console.log(`[${fechaHora}] ${req.method} ${req.url}`);
+  next(); // Pasa al siguiente middleware o manejador de ruta
+};
+
+// Aplicar el middleware a todas las rutas
+app.use(loggerMiddleware);
+
+// Rutas de ejemplo
+app.get('/', (req, res) => {
+  res.send('¡Hola desde la página principal!');
+});
+
+app.get('/acerca', (req, res) => {
+  res.send('¡Esta es la página "Acerca de"!');
 });
 
 app.listen(port, () => {
