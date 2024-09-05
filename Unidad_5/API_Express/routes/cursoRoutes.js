@@ -36,7 +36,7 @@ router.post('/',async (req,res)=>{
 
     router.delete('/',async (req,res)=>{
     const estudiantes = await Estudiante.findByIdAndDelete(req.body.id,{
-        res.send(estudiantes);
+        res.send(estudiantes)
     });
 }); 
 
