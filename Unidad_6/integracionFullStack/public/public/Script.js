@@ -11,7 +11,8 @@ document.getElementById('dataForm').addEventListener('submit', async function (e
         body : JSON.stringify({name})
     });
     const data = await response.json();
-    document.getElementById('responseMessage').textContent = result.message;
+    document.getElementById('responseMessage').textContent = result.message
+
 });
 
 
